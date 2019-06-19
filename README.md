@@ -38,8 +38,8 @@ npm install
 npm run open
 npm run serve
 ~~~~
-Now bundles are available here: http://localhost:3002/
-CDN will be available at http://localhost:3002/static/js/openbundle.js
+* Now bundles are available here: http://localhost:3002/
+* CDN will be available at http://localhost:3002/static/js/openbundle.js
 
 ### main-app
 ~~~~
