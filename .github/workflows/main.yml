@@ -1,0 +1,18 @@
+name: A workflow for Sending SMS notification
+on: push
+
+jobs:
+  build:
+    name: Exosms action
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Sending SMS Notification'
+        uses: sagarchoudhary96/exosms-actions@v1
+        with:
+          fromNumber: '+918047193542'
+          toNumber: '+919056455979'
+          message: 'New Code Changes to master'
+        env:
+          EXOTEL_ACCOUNT_SID: ${{ secrets.EXOTEL_ACCOUNT_SID }}
+          EXOTEL_API_KEY: ${{ secrets.EXOTEL_API_KEY }}
+          EXOTEL_API_TOKEN: ${{ secrets.EXOTEL_API_TOKEN }}
